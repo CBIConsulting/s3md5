@@ -269,7 +269,7 @@ if [ $DEBUG -eq 1 ]; then
 fi
 
 if [ "$(wc -l $SUM_FILE | cut -d' ' -f1)" = "1" ]; then
-	# There are no -fragments when there is only one 
+	# There are no -chunks when there is only one 
 	s3sumn="$(cat $SUM_FILE)"
 else
 	# Convert all md5 sums (in hex text notation) to bin and concatenate them into a file
